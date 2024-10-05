@@ -1,6 +1,6 @@
 import numpy as np
 
-"""import numpy as np 
+import numpy as np 
 
 #CREATING ARRAY 
 #1d array 
@@ -59,20 +59,20 @@ print(rand_int)
 #BROADCASTING 
 arr7 = np.array([1,2,3])
 arr8 = np.array([[1],[2,],[3]])
-print (arr7+arr8)"""
+print (arr7+arr8)
 
 """DICE ROLL SIMULATOR"""
-"""roll = np.random.randint(1,7,size= (1000,2))
+roll = np.random.randint(1,7,size= (1000,2))
 sums = roll.sum(axis=1)
 
 unique, counts = np.unique(sums, return_counts=True)
-print(dict(zip(unique,counts)))"""
+print(dict(zip(unique,counts)))
 
 """TEMPRETURE CONVERTER"""
-"""user_input = input('enter tempreture in celcius (seprated by spaces):')
+user_input = input('enter tempreture in celcius (seprated by spaces):')
 #split the input string into a lot of strings
 temp_string = user_input.split()
 #converting into array 
 celciuus = np.array(temp_string, dtype=float)
 fehranite = (celciuus*9/5)+32
-print(f"tempreture in fehranite:{fehranite}")"""
+print(f"tempreture in fehranite:{fehranite}")

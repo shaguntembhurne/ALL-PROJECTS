@@ -1,54 +1,54 @@
 #print 
-"""print("shagun amol tembhurne")"""
+print("shagun amol tembhurne")
 
 #taking input and formatted string concept
-"""s=int(input("what is your age:"))
-print(f'your age is {s}')"""
+s=int(input("what is your age:"))
+print(f'your age is {s}')
 
 #car game
-"""start_comnmand = "start"
-stop_command= "stop"
+start_command = "start"
+stop_command = "stop"
 quit_command = "quit"
-print(f'you have these choices:\n {start_comnmand}- will start the car \n {stop_command}-will stop the car\n {quit_command}-will quit the game ')
+
+print(f'You have these choices:\n {start_command} - will start the car \n {stop_command} - will stop the car\n {quit_command} - will quit the game ')
+
 running = True
+
 while running:
-    command = input("command:")
-    if command == start_comnmand:
-        print('your car is started')
+    command = input("command: ").lower()  # Ensuring case-insensitive input
+
+    if command == start_command:
+        print('Your car is started')
     elif command == stop_command:
-        print('your car is stopped')
+        print('Your car is stopped')
     elif command == quit_command:
-        print("you quit")
-           break
-        min_tries += 1
-        if min_tries== max_tries:
-            print(f'well you lost and the number was {random_number}')
-    except ValueError:
-        print("invalid input")     running = False
+        print("You quit the game")
+        break  # Exit the loop
     else:
-        print("you gave invalid input")"""
+        print("Invalid input. Please try again.")
+
 
 #for loop
-"""for s in range (4):
-    print(s)"""
+for s in range (4):
+    print(s)
 
-"""for s in range (4):
+for s in range (4):
     for y in range (5):
-        print(f'{s},{y}')"""
+        print(f'{s},{y}')
 #here to make an f using for loop
-"""r = (5,2,5,2,2)
+r = (5,2,5,2,2)
 for num in r:
     s = num * "x"
-    print(s)"""
+    print(s)
 #add the prices there are in the shooping cart 
-"""price = [40,50,100,130]
+price = [40,50,100,130]
 total = 0
 for prices in price:
     total += prices 
-print (f"the ammount in the basket is{total}")"""
+print (f"the ammount in the basket is{total}")
 
 #guess game
-"""import random
+import random
 random_number = random.randint(1,100)
 max_tries = 5
 min_tries =0
@@ -62,12 +62,14 @@ while min_tries < max_tries:
             print("lower!!!")
         else:
             print("you won")
+    except:
+        pass
 
-    """
+    
 #make it small with just while and if loop with 0-10
 
 #calculator 
-"""def ADD (x,y):
+def ADD (x,y):
     return x+y
 def MUL (x,y):
     return x*y
@@ -111,29 +113,29 @@ def CALCULATOR ():
                 print('choose from 1-4')
         except ValueError:
             print('the input is not valid. choose from 1-4')
-CALCULATOR()"""
+CALCULATOR()
 
 #list method 
 #basically its about using list and .operator 
-"""list = [2,3,4,5,6]
+list = [2,3,4,5,6]
 list.insert(0,10)
 print(list)
-"""# well play with all the operators later
+# well play with all the operators later
 #to remove duplicates from a list method 1
-"""s = [2,2,3,3,4,4,5,5]
+s = [2,2,3,3,4,4,5,5]
 list2 = list(set(s))
-print(list2)"""#so this is the method one but in method 2 we can use 1 list can iterate over
+print(list2)#so this is the method one but in method 2 we can use 1 list can iterate over
 #another list and then we can jsut put that into another list
-"""l = [2,2,3,3,4,4,5,5,]
+l = [2,2,3,3,4,4,5,5,]
 s = []
 for l in l:
     if l not in s:
         s.append(l)
-print(s)"""
+print(s)
 
 #these are the dictonarties we can create and the ones which we can use and i have to practice
 
-"""phone = input("tell me the input")
+phone = input("tell me the input")
 digits_mapping = {
     "1": 'one',
     "2": 'two',
@@ -145,8 +147,8 @@ output= ""
 for ch in phone:
     output += digits_mapping.get(ch,"!")
 print(output)
-    """
-"""message = input('>')
+    
+message = input('>')
 words = message.split
 emojis = {
     ":)" : "😁",
@@ -155,27 +157,27 @@ emojis = {
 output = ""
 for words in words:
     output += emojis.get(words,words)
-print(output)"""#practice this shit
+print(output)#practice this shit
  
  #defining function
-"""def number():# bascically we are defining a functiona nd callin it out later 
+def number():# bascically we are defining a functiona nd callin it out later 
  print("hello")
 
 print('world')
 number()
-print('eeee')"""
-"""def num(name):#here we are giving a value and maiking a fucntion and understanding the concept
+print('eeee')
+def num(name):#here we are giving a value and maiking a fucntion and understanding the concept
     print(f'hi {name} welcome aboard')
 print ('helo world')
 num("shagun")#use comma and you can use two shit at same time too
 num("s")#basically this is a parameter and we have to work under these parameters
-"""
+
 #there is a concept of positionnal and keyword argument in this 
 #so what you are doing is first_name = shagun can be done and to numeric values we can give x=5 for better code 
  
 
 #CLASSES
-"""class Point:
+class Point:
     def move():
         print("move")
     def draw():
@@ -185,21 +187,21 @@ Point1.x = 10
 Point1.y = 20
 print(Point1.x)
 Point1.draw()
-"""
 
-"""prrice of the house is 1 mil
-if the buyer has good credit they need to put down 10 percent 
-if the buyer has bad credit they need to put down 20 percent 
-print the down payment """
-"""price = 1000000
+
+#prrice of the house is 1 mil
+#if the buyer has good credit they need to put down 10 percent 
+#if the buyer has bad credit they need to put down 20 percent 
+#print the down payment 
+price = 1000000
 good_credit = True
 if good_credit:
     down_payment = 0.1 * price
 else:
     down_payment = 0.2 * price
-print(f"down payment: ${down_payment}")"""
+print(f"down payment: ${down_payment}")
 
-"""enter = int(input('weight'))
+enter = int(input('weight'))
 weight_kg = enter / 2.20462
 weight_lb = enter * 2.20462
 options = input('is your weight in lb or kg')
@@ -209,9 +211,9 @@ while options == "kg":
         print(weight_lb)
         break
 else:
-    print("i dont get you")"""
+    print("i dont get you")
 #this is what we made and now we are gonna take inspiration and do next style code
-"""continue_conversion = True
+continue_conversion = True
 while continue_conversion:
     try:
         enter = float(input('please enter your weight'))
@@ -232,9 +234,9 @@ while continue_conversion:
         if another_try != "yes":
             break
     except ValueError:
-        print("invalid input please put a valid input in")"""
+        print("invalid input please put a valid input in")
 
-"""import random
+import random
 secret_mumnber = random.randint(1,100)
 max_tries = 5
 min_tries = 0
@@ -256,7 +258,7 @@ while min_tries < max_tries:
     except ValueError:
         print("invalid error")
 if max_tries == min_tries and guess != secret_mumnber:
-              print('sorry you failed at this too hahhaha')"""
+              print('sorry you failed at this too hahhaha')
   
             
 
